@@ -9,6 +9,6 @@ such as Netflix, as well as give suggestions of shows to watch based off of
 the user's available time. 
 
 #### Dependencies
-React.js version 12.19.0
+React.js version 12.19.0 <br />
 Dotnet Core 3 or above
 
