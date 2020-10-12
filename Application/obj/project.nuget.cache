@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XL0gPzZ+r50G/I2cvize23DXLvQxKT8OvV9M6rc9hIvfWD3SYMedQpaTINHqkNkkIllpwLLsNLymnLf9QzDOHg==",
+  "success": true,
+  "projectFilePath": "E:\\Documents\\Projects\\What2Watch\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chand\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\chand\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
