@@ -10,5 +10,5 @@ the user's available time.
 
 #### Dependencies
 React.js version 12.19.0 <br />
-Dotnet Core 3 or above
+Dotnet Core 3.1 or above
 
