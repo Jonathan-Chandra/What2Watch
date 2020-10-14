@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component{
   state = {
@@ -9,9 +10,14 @@ class App extends Component{
 
   // Set API here
   componentDidMount(){
-    this.setState(
+    axios.get('http://localhost:5000/api/values').then((response) =>
       {
-          values: [{id: 1, name: 'Value 101'}, {id: 2, name: 'Value 102'}]
+        console.log(response)
+        this.setState(
+          {
+            values: response.data
+          }
+        )
       }
     )
   }
@@ -23,7 +29,7 @@ class App extends Component{
         <img src={logo} className="App-logo" alt="logo" />
         <ul>
           {this.state.values.map((value: any) => (
-            <li>{value.name}</li>
+            <li key={value.id}>{value.name}</li>
           ))}
         </ul>
       </header>
