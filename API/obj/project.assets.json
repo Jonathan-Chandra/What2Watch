@@ -1264,11 +1264,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Documents\\Projects\\What2Watch\\API\\API.csproj",
+      "projectUniqueName": "E:\\Documents\\Projects\\What2Watch\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "e:\\Documents\\Projects\\What2Watch\\API\\API.csproj",
+      "projectPath": "E:\\Documents\\Projects\\What2Watch\\API\\API.csproj",
       "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
-      "outputPath": "e:\\Documents\\Projects\\What2Watch\\API\\obj\\",
+      "outputPath": "E:\\Documents\\Projects\\What2Watch\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1288,8 +1288,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "e:\\Documents\\Projects\\What2Watch\\Application\\Application.csproj": {
-              "projectPath": "e:\\Documents\\Projects\\What2Watch\\Application\\Application.csproj"
+            "E:\\Documents\\Projects\\What2Watch\\Application\\Application.csproj": {
+              "projectPath": "E:\\Documents\\Projects\\What2Watch\\Application\\Application.csproj"
             }
           }
         }

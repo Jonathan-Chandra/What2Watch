@@ -1308,11 +1308,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Documents\\Projects\\What2Watch\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "E:\\Documents\\Projects\\What2Watch\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "e:\\Documents\\Projects\\What2Watch\\Persistence\\Persistence.csproj",
+      "projectPath": "E:\\Documents\\Projects\\What2Watch\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
-      "outputPath": "e:\\Documents\\Projects\\What2Watch\\Persistence\\obj\\",
+      "outputPath": "E:\\Documents\\Projects\\What2Watch\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1332,8 +1332,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "e:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj": {
-              "projectPath": "e:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj"
+            "E:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj": {
+              "projectPath": "E:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj"
             }
           }
         }
