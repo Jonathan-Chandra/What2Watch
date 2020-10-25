@@ -9,9 +9,9 @@ namespace Application.Movies
 {
     public class Details
     {
-       public class Query : IRequest<Movie>
-       {
-           public Guid Id { get; set; }
+        public class Query : IRequest<Movie>
+        {
+            public Guid Id { get; set; }
 
             public class Handler : IRequestHandler<Query, Movie>
             {
@@ -29,6 +29,6 @@ namespace Application.Movies
                     return movie;
                 }
             }
-        } 
+        }
     }
 }

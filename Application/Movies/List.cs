@@ -24,7 +24,7 @@ namespace Application.Movies
             public async Task<List<Movie>> Handle(Query request, CancellationToken cancellationToken)
             {
                 var movies = await _context.Movies.ToListAsync();
-                
+
                 return movies;
             }
         }

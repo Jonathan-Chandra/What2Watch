@@ -51,11 +51,11 @@ namespace Application.Movies
         }
 
         public class Handler : IRequestHandler<Command>
-        {   
+        {
             private readonly DataContext _context;
             public Handler(DataContext context)
             {
-               _context = context; 
+                _context = context;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
@@ -67,14 +67,14 @@ namespace Application.Movies
                     Rated = request.Rated,
                     Released = request.Released,
                     Runtime = request.Runtime,
-                    Genre  = request.Genre,
+                    Genre = request.Genre,
                     Director = request.Director,
-                    Writer = request.Writer, 
+                    Writer = request.Writer,
                     Actors = request.Actors,
                     Plot = request.Plot,
                     Language = request.Language,
                     Country = request.Country,
-                    Awards = request.Awards, 
+                    Awards = request.Awards,
                     Poster = request.Poster,
                     Ratings = request.Ratings,
                     MetaScore = request.MetaScore,
@@ -85,7 +85,7 @@ namespace Application.Movies
                 };
                 _context.Movies.Add(movie);
                 var success = await _context.SaveChangesAsync() > 0;
-                if(success) return Unit.Value;
+                if (success) return Unit.Value;
                 throw new Exception("Problem saving changes.");
             }
         }
