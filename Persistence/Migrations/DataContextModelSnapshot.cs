@@ -45,6 +45,74 @@ namespace Persistence.Migrations
                     b.ToTable("Activities");
                 });
 
+            modelBuilder.Entity("Domain.Movie", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Actors")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Awards")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Director")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Genre")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Language")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MetaScore")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Plot")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Poster")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Rated")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Ratings")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Released")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Runtime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Streams")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TotalSeasons")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Website")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Writer")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Movies");
+                });
+
             modelBuilder.Entity("Domain.Value", b =>
                 {
                     b.Property<int>("Id")
