@@ -69,6 +69,9 @@ namespace Persistence.Migrations
                     b.Property<string>("Language")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("MetaScore")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Plot")
                         .HasColumnType("TEXT");
 
@@ -78,13 +81,25 @@ namespace Persistence.Migrations
                     b.Property<string>("Rated")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Ratings")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Released")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Runtime")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Streams")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Title")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TotalSeasons")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Type")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Website")

@@ -42,7 +42,12 @@ namespace Persistence.Migrations
                     Country = table.Column<string>(nullable: true),
                     Awards = table.Column<string>(nullable: true),
                     Poster = table.Column<string>(nullable: true),
-                    Website = table.Column<string>(nullable: true)
+                    Ratings = table.Column<string>(nullable: true),
+                    MetaScore = table.Column<string>(nullable: true),
+                    Type = table.Column<string>(nullable: true),
+                    TotalSeasons = table.Column<string>(nullable: true),
+                    Website = table.Column<string>(nullable: true),
+                    Streams = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

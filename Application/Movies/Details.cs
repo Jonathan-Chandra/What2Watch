@@ -9,25 +9,26 @@ namespace Application.Movies
 {
     public class Details
     {
+       public class Query : IRequest<Movie>
+       {
+           public Guid Id { get; set; }
 
-        public class Query : IRequest<Movie>
-        {
-            public Guid Id { get; set; }
-        }
-
-        public class Handler : IRequestHandler<Query, Movie>
-        {
-            private readonly DataContext _context;
-            public Handler(DataContext context)
+            public class Handler : IRequestHandler<Query, Movie>
             {
-                _context = context;
+                private readonly DataContext _context;
 
+                public Handler(DataContext context)
+                {
+                    _context = context;
+                }
+
+                public async Task<Movie> Handle(Query request, CancellationToken cancellationToken)
+                {
+                    var movie = await _context.Movies.FindAsync(request.Id);
+
+                    return movie;
+                }
             }
-            public async Task<Movie> Handle(Query request, CancellationToken cancellationToken)
-            {
-                var movie = await _context.Movies.FindAsync(request.Id);
-                return movie;
-            }
-        }
+        } 
     }
 }

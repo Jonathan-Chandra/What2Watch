@@ -30,6 +30,15 @@ namespace Domain
 
         public string Poster { get; set; }
 
+        public string Ratings { get; set; }
+
+        public string MetaScore { get; set; }
+
+        public string Type { get; set; }
+
+        public string TotalSeasons { get; set; }
         public string Website { get; set; }
+
+        public string Streams { get; set; }
     }
 }
