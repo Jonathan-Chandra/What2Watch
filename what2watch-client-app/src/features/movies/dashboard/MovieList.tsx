@@ -4,9 +4,10 @@ import { IMovie } from "../../../app/models/movie";
 
 interface IProps {
   movies: IMovie[];
+  selectMovie : (id: string) => void;
 }
 
-export const MovieList: React.FC<IProps> = ({ movies }) => {
+export const MovieList: React.FC<IProps> = ({ movies, selectMovie }) => {
   return (
     <Segment clearing>
       <Item.Group divided>
@@ -21,7 +22,7 @@ export const MovieList: React.FC<IProps> = ({ movies }) => {
                 <div>{movie.actors}</div>
               </Item.Description>
               <Item.Extra>
-                <Button floated="right" content="View" color="blue" />
+                <Button onClick={ () => selectMovie(movie.id) } floated="right" content="View" color="blue" />
                 <Label basic content="Genre" />
               </Item.Extra>
             </Item.Content>

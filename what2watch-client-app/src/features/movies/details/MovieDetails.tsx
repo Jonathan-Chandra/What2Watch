@@ -1,21 +1,26 @@
 import React from "react";
 import { Button, Card, Icon, Image } from "semantic-ui-react";
+import { IMovie } from "../../../app/models/movie";
 
-export const MovieDetails = () => {
+interface IProps{
+  movie: IMovie;
+}
+
+export const MovieDetails: React.FC<IProps> = ({movie}) => {
   return (
     <Card fluid>
       <Image
-        src="/assets/placeholder.png"
+        src={`/assets/placeholder.png`}
         wrapped
         ui={false}
       />
       <Card.Content>
-        <Card.Header>Title</Card.Header>
+        <Card.Header>{movie.title}</Card.Header>
         <Card.Meta>
-          <span className="date">Release Date</span>
+  <span className="date">{movie.released}</span>
         </Card.Meta>
         <Card.Description>
-            Plot
+          {movie.plot}            
         </Card.Description>
       </Card.Content>
       <Card.Content extra>

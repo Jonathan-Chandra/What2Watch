@@ -37,6 +37,7 @@ namespace Domain
         public string Type { get; set; }
 
         public string TotalSeasons { get; set; }
+
         public string Website { get; set; }
 
         public string Streams { get; set; }
