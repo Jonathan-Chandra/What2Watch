@@ -10,11 +10,17 @@ interface IProps {
   movies: IMovie[];
   selectMovie: (id: string) => void;
   selectedMovie: IMovie | null;
+  editMode: boolean;
+  setEditMode: (editMode: boolean) => void;
+  setSelectedMovie: (movie: IMovie | null) => void;
 }
 export const MovieDashboard: React.FC<IProps> = ({
   movies,
   selectMovie,
   selectedMovie,
+  editMode,
+  setEditMode,
+  setSelectedMovie,
 }) => {
   return (
     <Grid>
@@ -22,8 +28,16 @@ export const MovieDashboard: React.FC<IProps> = ({
         <MovieList movies={movies} selectMovie={selectMovie} />
       </Grid.Column>
       <Grid.Column width={6}>
-        {selectedMovie && <MovieDetails movie={selectedMovie} />}
-        <MovieForm />
+        {selectedMovie && !editMode && (
+          <MovieDetails
+            movie={selectedMovie}
+            setEditMode={setEditMode}
+            setSelectedMovie={setSelectedMovie}
+          />
+        )}
+        {editMode && (
+          <MovieForm setEditMode={setEditMode} movie={selectedMovie!} />
+        )}
       </Grid.Column>
     </Grid>
   );

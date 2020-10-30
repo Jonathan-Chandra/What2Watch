@@ -11,6 +11,10 @@ const App = () => {
   const [movies, setMovies] = useState<IMovie[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<IMovie | null>(null);
   const [editMode, setEditMode] = useState(false);
+  const handleOpenCreateForm = () => {
+    setSelectedMovie(null);
+    setEditMode(true);
+  };
   const handleSelectMovie = (id: string) => {
     setSelectedMovie(movies.filter((a) => a.id === id)[0]);
   };
@@ -21,12 +25,15 @@ const App = () => {
   }, []);
   return (
     <Fragment>
-      <NavBar />
+      <NavBar openCreateForm={handleOpenCreateForm} />
       <Container style={{ marginTop: "7em" }}>
         <MovieDashboard
           movies={movies}
           selectMovie={handleSelectMovie}
           selectedMovie={selectedMovie!}
+          editMode={editMode}
+          setEditMode={setEditMode}
+          setSelectedMovie={setSelectedMovie}
         />
       </Container>
     </Fragment>
