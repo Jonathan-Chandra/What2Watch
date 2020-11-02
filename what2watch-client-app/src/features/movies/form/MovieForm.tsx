@@ -40,6 +40,11 @@ export const MovieForm: React.FC<IProps> = ({
     }
   };
   const [movie, setMovie] = useState<IMovie>(initializeForm);
+
+  const handleInputChange = (event: any) => {
+    console.log(event.target.value);
+    setMovie({...movie, title: event.target.value});
+  }
   return (
     <Segment clearing>
       <Form>

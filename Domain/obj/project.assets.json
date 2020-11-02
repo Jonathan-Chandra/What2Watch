@@ -8,31 +8,24 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\chand\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/jonathanchandra/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj",
+      "projectUniqueName": "/Users/jonathanchandra/Projects/What2Watch/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "E:\\Documents\\Projects\\What2Watch\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
-      "outputPath": "E:\\Documents\\Projects\\What2Watch\\Domain\\obj\\",
+      "projectPath": "/Users/jonathanchandra/Projects/What2Watch/Domain/Domain.csproj",
+      "packagesPath": "/Users/jonathanchandra/.nuget/packages/",
+      "outputPath": "/Users/jonathanchandra/Projects/What2Watch/Domain/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\chand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/jonathanchandra/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -63,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
       }
     }
   }
